@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Size */
+$font-size-xs: 12px;
+
+/* Text Colors */
+$very-dark-blue: hsl(238, 29%, 16%);
+$very-dark-grayish: hsl(237, 12%, 33%);
+
+/* Margins */
+$margin-xs: .5rem;
+$margin-sm: 1rem;
+
+
+/* Background Gradients */
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+
+/* Dividers */
+$light-grayish: hsl(240, 5%, 91%);
+
+/* General */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: $font-size-xs;
+  background: linear-gradient(45deg, $soft-violet, $soft-blue);
+}
+
+.container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 95vh;
+}
+
+/* Card */
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.card-image {
+  flex: 0 1 50%;
+  
+  & img {
+    width: 100%;
+  }
+}
+
+.card {
+  flex: 0 1 45%;
+  padding: 2rem;
+
+  & .card__top {
+    font-size: 1.5rem;
+    margin-bottom: $margin-sm;
+    color: $very-dark-blue;
+  }
+}
+
+.card__body-question {
+  margin-bottom: .5rem;
+  border-bottom: 2px solid $light-grayish;
+  color: $very-dark-blue;
+
+  & .card__body-answer {
+    color: $very-dark-grayish;
+    padding-bottom: $margin-xs;
+  }
+
+  & .card__body-answer-hide {
+    display: none;
+  }
+}
+
+.card__body-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+
+  & .card__body-title {
+    margin-bottom: $margin-sm;
+  }
+
+  .card__body-arrow-rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+
+  & a {
+    color: #fff;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 770px) {
+  .card-wrapper {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .card-image {
+    flex-basis: 100%;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .card__body-icon-wrapper {
+    justify-content: center;
+
+    & .card__body-title {
+      margin-right: $margin-xs;
+    }
+  }
+}
