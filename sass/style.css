@@ -115,13 +115,12 @@ footer {
   margin-top: 1rem;
 }
 
-footer .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
 }
 
-footer .attribution a {
-  text-decoration: none;
+.attribution a {
   color: #fff;
 }
 
@@ -149,3 +148,4 @@ footer .attribution a {
     margin-right: 0.5rem;
   }
 }
+/*# sourceMappingURL=style.css.map */

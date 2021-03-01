@@ -49,10 +49,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 50vh;
   background-color: #fff;
   border-radius: 20px;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .card-image {
@@ -104,12 +104,17 @@ body {
   }
 }
 
+footer {
+  margin-top: 1rem;
+
 .attribution { 
   font-size: 11px; text-align: center; 
 
   & a {
+    text-decoration: none;
     color: #fff;
   }
+}
 }
 
 /* Media Queries */
